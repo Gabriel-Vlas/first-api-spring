@@ -29,4 +29,9 @@ public class UsuarioController {
         repository.remove(id);
     }
 
+    @PutMapping
+    public void putUser(@RequestBody Usuario usuario){
+        repository.save(usuario);
+    }
+
 }
